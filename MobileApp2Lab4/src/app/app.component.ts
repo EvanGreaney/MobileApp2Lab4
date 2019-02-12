@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MobileApp2Lab4';
+
+  counter: number = 0;
+  onButtonClick(){
+    this.counter++;
+  }
+  hide:boolean = false;
+  
+  onDoubleClick(){
+if(this.hide == false)
+{
+  this.hide = true;
+}
+else{
+  this.hide = false;
+}
+  }
+
 }
